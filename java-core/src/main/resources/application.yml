@@ -1,0 +1,6 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: custodian-core
+# AI_PLANE_URL env var points at the Python FastAPI service (default localhost:8000)

@@ -1,0 +1,6 @@
+fastapi>=0.111
+uvicorn>=0.30
+pydantic>=2.7
+boto3>=1.34          # AWS Bedrock (optional at runtime; stub mode if absent)
+openai>=1.40         # Azure OpenAI (optional)
+google-cloud-aiplatform>=1.60   # Vertex AI (optional)

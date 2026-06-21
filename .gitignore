@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+target/
+.idea/
+.venv/
+INTERVIEW_TALK_TRACK.md

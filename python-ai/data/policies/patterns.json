@@ -1,0 +1,32 @@
+[
+  {
+    "id": "BIAN-PAYMENT-ORDER",
+    "title": "BIAN Payment Order service domain",
+    "body": "Encapsulates initiation and lifecycle of a payment order. Target state for legacy payment-processing modules. Favours event-driven choreography over synchronous orchestration to reduce coupling and improve resilience under peak load."
+  },
+  {
+    "id": "BIAN-CUSTOMER-OFFER",
+    "title": "BIAN Customer Offer service domain",
+    "body": "Manages product offers presented to a customer. Suitable target for legacy product-catalogue and eligibility components currently embedded in monolithic onboarding flows."
+  },
+  {
+    "id": "PATTERN-STRANGLER-FIG",
+    "title": "Strangler Fig migration pattern",
+    "body": "Incrementally route traffic from a legacy monolith to new services behind a facade, retiring legacy paths only once the replacement is proven. Reduces big-bang migration risk. Recommended sequencing when blast radius is high."
+  },
+  {
+    "id": "ANTIPATTERN-SHARED-DB",
+    "title": "Shared database anti-pattern",
+    "body": "Multiple services reading and writing the same database tables create hidden coupling, block independent deployment, and make data ownership ambiguous. Must be decomposed before service extraction. High migration-risk indicator."
+  },
+  {
+    "id": "ANTIPATTERN-SYNC-COUPLING",
+    "title": "Synchronous coupling anti-pattern",
+    "body": "Long synchronous call chains across components propagate latency and failure. Convert to asynchronous, event-driven integration to bound blast radius and improve P99 latency."
+  },
+  {
+    "id": "PATTERN-EVENT-DRIVEN",
+    "title": "Event-driven integration pattern",
+    "body": "Components communicate via events on a durable broker rather than direct synchronous calls. Improves resilience, scalability, and independent deployability. Preferred target integration style for high-throughput BFSI platforms."
+  }
+]
