@@ -138,8 +138,12 @@ and audit trail are demonstrable without any cloud spend.
 1. `docs/adr/0001-model-agnostic-routing.md` — why the router exists
 2. `docs/adr/0002-human-in-the-loop-gating.md` — why nothing auto-commits
 3. `docs/adr/0003-java-python-split.md` — why two languages
-4. `python-ai/app/agent/assessment_agent.py` — the agent loop
-5. `java-core/.../approval/ApprovalStateMachine.java` — the governance gate
+4. `docs/adr/0004-policy-enforcement-in-control-plane.md` — why policy lives in the JVM today, and the OPA path
+5. `docs/adr/0005-no-agent-framework.md` — why no LangChain/LangGraph in the core, and how to adopt one
+6. `docs/adr/0006-rest-not-grpc-between-planes.md` — why REST between planes, and when gRPC
+7. `docs/adr/0007-storage-in-memory-now-postgres-target.md` — why in-memory stores in the demo, and the PostgreSQL + pgvector target
+8. `python-ai/app/agent/assessment_agent.py` — the agent loop
+9. `java-core/.../approval/ApprovalStateMachine.java` — the governance gate
 
 ## Tests
 
